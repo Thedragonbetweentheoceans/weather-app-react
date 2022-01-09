@@ -10,7 +10,7 @@ class App extends React.Component {
 
     const x = document.getElementById("textareaAdd").value;
     console.log(x)
-    // const link = "http://api.weatherapi.com/v1/current.json?key=07d498f96e924499848201152220901&q=" + x + "&aqi=no";
+    const link = "http://api.weatherapi.com/v1/current.json?key=07d498f96e924499848201152220901&q=" + x + "&aqi=no";
     const request = new XMLHttpRequest();
     request.open("GET", link)
     request.send();
